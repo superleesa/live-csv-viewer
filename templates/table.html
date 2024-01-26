@@ -1,0 +1,9 @@
+<body>
+    {{ html | safe}}
+</body>
+<script>
+    console.log("reloaded");
+    setTimeout(() => {window.location.href = "{{ url_for('index') }}"}, 10000);
+    
+    
+</script>
